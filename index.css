@@ -52,17 +52,64 @@ nav ul a{
     font-size: 4rem;
     font-weight: bold;
 }
+/* card related styles */
+
+.card-content{
+   text-align: center;
+   margin-bottom: 30px;
+}
+.card-items{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.card-content-title{
+    font-size: 3.24rem;
+    font-weight: bold;
+}
+.card{
+    text-align: center;
+}
+/* .card-text{
+    gap: 10px;
+} */
+.btn-primary{
+    width: 100%;
+    background-color: #E95A08;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    padding: 19px 80px;
+}
+
+/* plant-lover section style  */
+.plant-lover-container{
+    display: flex;
+    gap: auto;
+    margin-top: 210px;
+}
+.lover-content{
+    margin: 38px 60px 0px;
+}
+.lover-title{
+    font-size: 3.25rem;
+    font-weight: bold;
+}
 
 
 /* media query for smal device */
 @media screen and (max-width: 576px) {
     .nav-container,
     .nav-items ul,
-    .banner{
+    .banner,
+    .plant-lover-container{
         flex-direction: column;
     }
     .nav-items ul{
         gap: 20px;
+    }
+    .card-items{
+        grid-template-columns: repeat(2,1fr);
     }
     
 }
@@ -70,6 +117,9 @@ nav ul a{
 @media screen and (min-width: 576px) and (max-width:992px) {
     .banner{
         flex-direction: column;
+    }
+    .card-items{
+        grid-template-columns: repeat(2,1fr);
     }
     
 }
