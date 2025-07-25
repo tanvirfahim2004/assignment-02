@@ -127,7 +127,26 @@ nav ul a{
     background-color: #E95A08;
     color: white;
 }
-
+/* footer section style  */
+.div-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 50px 120px;
+}
+.div ul li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+#footer-logo{
+    width: 100%;
+}
+footer .div img{
+    /* height: 36px;
+    width: 216px; */
+    margin-right: 20px;
+    /* align-items: center; */
+    width: 10%;
+}
 
 
 /* media query for smal device */
@@ -144,6 +163,9 @@ nav ul a{
     .card-items{
         grid-template-columns: repeat(2,1fr);
     }
+    .div-container{
+        grid-template-columns: repeat(1,1fr);
+    }
     .email{
         width: auto;
     }
@@ -154,7 +176,7 @@ nav ul a{
     .banner{
         flex-direction: column;
     }
-    .card-items{
+    .card-items,.div-container{
         grid-template-columns: repeat(2,1fr);
     }
     .email{
