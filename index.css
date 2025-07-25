@@ -96,6 +96,39 @@ nav ul a{
     font-weight: bold;
 }
 
+/* join section style here  */
+.join{
+    background-image: url(assets/news-letter-bg.png);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 120px;
+    gap: 0px;
+}
+.join-title{
+    font-size: 3.25rem;
+    font-weight: bold;
+    color: white;
+}
+.email{
+    /* height: 3.25rem; */
+    width: 40.25rem;
+    padding: 8px 20px;
+}
+.subscribe{
+    /* height: 3.25rem; */
+    width: 12rem;
+    padding: 8px 20px;
+    background-color: #E95A08;
+    color: white;
+}
+
+
 
 /* media query for smal device */
 @media screen and (max-width: 576px) {
@@ -111,6 +144,9 @@ nav ul a{
     .card-items{
         grid-template-columns: repeat(2,1fr);
     }
+    .email{
+        width: auto;
+    }
     
 }
 /* media query for medium devices */
@@ -120,6 +156,9 @@ nav ul a{
     }
     .card-items{
         grid-template-columns: repeat(2,1fr);
+    }
+    .email{
+        width: auto;
     }
     
 }
