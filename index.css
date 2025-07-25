@@ -1,0 +1,75 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+.noto-serif-font{
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+/* shared style  */
+body{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.text-light{
+    color: #8987A1;
+}
+.text-dark{
+    color: #252432;
+}
+.light-red{
+    color: #E95A08;
+}
+.text-color{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* nav section style  */
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-items ul {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+nav ul a{
+    text-decoration: none;
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+    padding: 80px 0px 0px 0px;
+}
+.always,.fresh,.flowers{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+
+/* media query for smal device */
+@media screen and (max-width: 576px) {
+    .nav-container,
+    .nav-items ul,
+    .banner{
+        flex-direction: column;
+    }
+    .nav-items ul{
+        gap: 20px;
+    }
+    
+}
+/* media query for medium devices */
+@media screen and (min-width: 576px) and (max-width:992px) {
+    .banner{
+        flex-direction: column;
+    }
+    
+}
