@@ -101,14 +101,14 @@ nav ul a{
     background-image: url(assets/news-letter-bg.png);
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 550px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin-top: 120px;
-    gap: 0px;
+
 }
 .join-title{
     font-size: 3.25rem;
@@ -147,15 +147,94 @@ footer .div img{
     /* align-items: center; */
     width: 10%;
 }
+/* deals section style  */
+.deals-content{
+   text-align: center;
+}
+.deals-title{
+    margin-bottom: 10px;
+}
+.deals-description{
+    margin-top: 0;
+}
+.right{
+    background-image: url(assets/deal-zabo.png);
+    width: 100%;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+}
+.title-r{
+    margin-bottom: 10px;
 
+}
+.subtitle-r{
+    margin-top: 0px;
+}
+.part1{
+    background-image: url(assets/deal-ana.png);
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+}
+.title-l1{
+    margin-bottom: 10px;
+}
+.subtitle-l1{
+    margin-top: 0;
+}
+.part2{
+    background-image: url(assets/deal-bloom.png);
+     background-position: top;
+    background-size: 100%;
+    /* background-repeat: no-repeat; */
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+}
+.title-l2{
+    margin-bottom: 10px;
+}
+.subtitle-l2{
+    margin-top: 0;
+}
+#left-container{
+  display: grid;
+  gap: 25px;
+}
+.deals-pic{
+    display: grid;
+    gap: 28px;
+    grid-template-columns: repeat(2,1fr);
+    margin: 120px 0px;
+}
 
 /* media query for smal device */
 @media screen and (max-width: 576px) {
     .nav-container,
     .nav-items ul,
-    .banner,
     .plant-lover-container{
         flex-direction: column;
+    }
+    .banner{
+        flex-direction: column-reverse;
     }
     .nav-items ul{
         gap: 20px;
@@ -163,7 +242,8 @@ footer .div img{
     .card-items{
         grid-template-columns: repeat(2,1fr);
     }
-    .div-container{
+    .div-container,
+    .deals-pic{
         grid-template-columns: repeat(1,1fr);
     }
     .email{
@@ -182,5 +262,7 @@ footer .div img{
     .email{
         width: auto;
     }
-    
+    .deals-pic{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
